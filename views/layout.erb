@@ -1,56 +1,110 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta charset="utf-8">
     <title>The Graphics Company</title>
-    <link REL="stylesheet" TYPE="text/css" HREF="/css/tgc.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
     <meta name="description" content="Commerical and corporate wide-format and standard print and display solutions." />
     <meta name="keywords" content="wide-format printing,digital print,banners,posters,popups,vinyl prints,flyers,brochures,exhibitions,window graphics,signage." />
+
+    <!-- Le styles -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/imgs/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/imgs/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/imgs/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/imgs/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/imgs/ico/apple-touch-icon-57-precomposed.png">
   </head>
+
   <body>
-    
-    <div id="outerWrapper">
-      
-      <div id="header">
-        <div id="companyName">
-          <a href="/">THE <br/>
-          GRAPHICS COMPANY</a>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Project name</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
       </div>
-      
-      <div id="topNav">
-        <div><a <%= top_nav_class(@path, 'about') %> href="/about">ABOUT US</a></div>
-        <div><a <%= top_nav_class(@path, 'contact') %> href="/contact">CONTACT US</a></div>
-        <% # TODO %>
-        <% # <div><a <%= top_nav_class(@path) %> href="/upload">CLIENT FTP</a></div> %>
-        <% # <div><a <%= top_nav_class(@path) %> href="/quote">QUICK QUOTE</a></div> %>
-        <div id="fblogo">
-          <a href="http://facebook.com/graphicscompany"><img src="/imgs/f_logo.png" title="Find us on Facebook" /></a>
-        </div>
-      </div>
-
-      <div id="nav">
-        
-        <div><a <%= side_nav_class(@path, 'home') %> href="/">HOME</a></div>
-        <div><a <%= side_nav_class(@path, 'pointofsale') %> href="/pointofsale">POINT OF SALE</a></div>
-        <div><a <%= side_nav_class(@path, 'posters') %> href="/posters">POSTERS</a></div>
-        <div><a <%= side_nav_class(@path, 'displaypanels') %> href="/displaypanels">DISPLAY PANELS</a></div>
-        <div><a <%= side_nav_class(@path, 'windowgraphics') %> href="/windowgraphics">WINDOW GRAPHICS</a></div>
-        <div><a <%= side_nav_class(@path, 'banners') %> href="/">BANNERS / FLAGS</a></div>
-        <div><a <%= side_nav_class(@path, 'exhibitions') %> href="/">EXHIBITIONS &amp; SETS</a></div>
-        <div><a <%= side_nav_class(@path, 'digital') %> href="/">DIGITAL PRINT</a></div>
-        <div><a <%= side_nav_class(@path, 'design') %> href="/">DESIGN SERVICE</a></div>
-      </div>
-      
-      <div id="content"><%= yield %></div>
-
-      
-      <div id="footer">
-        :: info@thegraphicscompany.ie :: +353 (1) 840 1311 :: Unit 12 : Redleaf Business Park : Donabate : Co. Dublin : Ireland :: 
-      </div>
-      
     </div>
-    
-    
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h2>Heading</h2>
+           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>Heading</h2>
+           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; The Graphics Company <%= Time.now.year %></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>-->
+
   </body>
 </html>
